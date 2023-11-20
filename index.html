@@ -2,12 +2,21 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Metadata of the Webpage -->
+	<!-- Character-set Metadata -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Viewport Metadata -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Description Metadata-->
+	<meta name="description" content="Portfolio Website" />
+	<!-- Author Metadata -->
+	<meta name="author" content="Manjul" />
+	<!-- Keyword Metadata -->
+	<meta name="keywords" content="Manjul, Portfolio, certificate" />
 
-	<title>Sumonta's Portfolio</title>
-	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	<title>My Portfolio</title>
+	<link rel="icon" href="assets/img/etc/logo.png" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/jquery.flipster.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,94 +41,26 @@
 </head>
 
 <body>
-
 	<!-- home function -->
-	<div id="header">
-		<div class="container box">
+	<div id="particles-js">
+		<div class="header">
 			<nav>
-				<img src="images/cover.png" class="logo" width="200px">
-
 				<ul id="sidemenu">
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#Services">Services</a></li>
+					<li><a href="#Services">My Services</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="#Achievements">Achievements</a></li>
+					<li><a href="#certificate">Certificate</a></li>
 					<li><a href="#contactme">Contact</a></li>
 					<i class="fas fa-times" onclick="closemenu()"></i>
 				</ul>
 				<i class="fas fa-bars" onclick="openmenu()"></i>
 			</nav>
-
-			<div class="header-text">
-
-				<div class="loader  animate__animated animate__slideInDown">
-					<div class="snow">
-						<span style="--i:11"></span>
-						<span style="--i:12"></span>
-						<span style="--i:15"></span>
-						<span style="--i:17"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-					</div>
-				</div>
-				<div class="loaader  animate__animated animate__slideInDown">
-					<div class="snow">
-						<span style="--i:11"></span>
-						<span style="--i:12"></span>
-						<span style="--i:15"></span>
-						<span style="--i:17"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-						<span style="--i:18"></span>
-						<span style="--i:13"></span>
-						<span style="--i:14"></span>
-						<span style="--i:19"></span>
-						<span style="--i:20"></span>
-						<span style="--i:10"></span>
-					</div>
-				</div>
-				<div class="setdiv  animate__animated animate__slideInUp">
-					<h2>Hi, I'm <br></h2>
-					<h1><span>Manjul <br>Smith</span></h1>
-					<p>Freelancer - IT developer - Web designer</p>
-
-					<div class="wrapper">
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="shadow"></div>
-						<div class="shadow"></div>
-						<div class="shadow"></div>
-					</div>
-				</div>
-
+			<div>
+				<img class="landing-img" src="assets/img/first.svg">
+			</div>
+			<div class="content">
+				<p>Cost - Clients requirements</p>
 			</div>
 
 			<div class="notification"
@@ -127,10 +68,8 @@
 				<p>Would you like to check my CV ?😊</p>
 				<span class="notification__progress"></span>
 			</div>
-
 		</div>
 	</div>
-
 	<script src="assets/js/menu.js"></script>
 
 	<!-- home function -->
@@ -788,21 +727,21 @@
 	<!-- Service section -->
 
 	<!-- Projects section -->
-	<h1 class="project-title">My Project</h1>
+	<h1 id="projects" class="project-title">My Project</h1>
 	<div class="hero">
 		<div class="carsi">
 			<ul>
-				<li> <img src="./assets/projects/1.jpg"> </li>
-				<li> <img src="./assets/projects/2.jpg"> </li>
-				<li> <img src="./assets/projects/3.jpg"> </li>
-				<li> <img src="./assets/projects/4.jpg"> </li>
-				<li> <img src="./assets/projects/5.jpg"> </li>
-				<li> <img src="./assets/projects/6.jpg"> </li>
-				<li> <img src="./assets/projects/7.jpg"> </li>
-				<li> <img src="./assets/projects/8.jpg"> </li>
-				<li> <img src="./assets/projects/9.jpg"> </li>
-				<li> <img src="./assets/projects/10.jpg"> </li>
-				<li> <img src="./assets/projects/11.jpg"> </li>
+				<li> <img src="./assets/img/projects/1.jpg"> </li>
+				<li> <img src="./assets/img/projects/2.jpg"> </li>
+				<li> <img src="./assets/img/projects/3.jpg"> </li>
+				<li> <img src="./assets/img/projects/4.jpg"> </li>
+				<li> <img src="./assets/img/projects/5.jpg"> </li>
+				<li> <img src="./assets/img/projects/6.jpg"> </li>
+				<li> <img src="./assets/img/projects/7.jpg"> </li>
+				<li> <img src="./assets/img/projects/8.jpg"> </li>
+				<li> <img src="./assets/img/projects/9.jpg"> </li>
+				<li> <img src="./assets/img/projects/10.jpg"> </li>
+				<li> <img src="./assets/img/projects/11.jpg"> </li>
 			</ul>
 		</div>
 	</div>
@@ -810,30 +749,29 @@
 	<!-- Projects section -->
 
 	<!-- My services Section -->
-	<!-- Photographs Section -->
-	<div id="projects">
-
-		<h1 class="sub-project">Photography</h1>
+	<!-- Certificate Section -->
+	<div id="certificate">
+		<h1 class="sub-certificate">Certificate</h1>
 		<div class="pos_Set">
-			<div class="slider" onclick="window.location.href = 'https://www.instagram.com/_sumonta_saha_/';">
-				<span style="--i:1;"><img class="scales" src="images/1.jpg"></span>
-				<span style="--i:2;"><img class="scales" src="images/2.jpg"></span>
-				<span style="--i:3;"><img class="scales" src="images/3.jpg"></span>
-				<span style="--i:4;"><img class="scales" src="images/4.jpg"></span>
-				<span style="--i:5;"><img class="scales" src="images/5.jpg"></span>
-				<span style="--i:6;"><img class="scales" src="images/6.jpg"></span>
-				<span style="--i:7;"><img class="scales" src="images/7.jpg"></span>
+			<div class="slider">
+				<span style="--i:1;"><img class="scales" src="assets/img/certificate/1. general web.jpg"></span>
+				<span style="--i:2;"><img class="scales" src="assets/img/certificate/2. Fron-End.jpg"></span>
+				<span style="--i:3;"><img class="scales" src="assets/img/certificate/3. BackEnd.jpg"></span>
+				<span style="--i:4;"><img class="scales" src="assets/img/certificate/4. Database.jpg"></span>
+				<span style="--i:5;"><img class="scales" src="assets/img/certificate/5. AI.jpg"></span>
+				<span style="--i:6;"><img class="scales" src="assets/img/certificate/6. Git.jpg"></span>
+				<!-- <span style="--i:7;"><img class="scales" src="images/7.jpg"></span>
 				<span style="--i:8;"><img class="scales" src="images/8.jpg"></span>
 				<span style="--i:9;"><img class="scales" src="images/9.jpg"></span>
 				<span style="--i:10;"><img class="scales" src="images/10.jpg"></span>
 				<span style="--i:11;"><img class="scales" src="images/11.jpg"></span>
-				<span style="--i:12;"><img class="scales" src="images/12.jpg"></span>
+				<span style="--i:12;"><img class="scales" src="images/12.jpg"></span> -->
 
 			</div>
 		</div>
 
 		<div class="service-lists follow">
-			<button class="button buttonSet" onclick="window.location.href = 'Section-Photo/photography.html';">
+			<button class="button buttonSet">
 				<span class="button_lg">
 					<span class="button_sl"></span>
 					<span class="button_text">Load More </span>
@@ -843,10 +781,7 @@
 	</div>
 
 	</div>
-	<!-- Photographs Section -->
-
-
-	<!-- Photographs Section -->
+	<!-- Certificate Section -->
 
 	<!-- contact me -->
 
@@ -866,7 +801,7 @@
 
 			</div>
 			<div class="contact-img">
-				<img class="check" src="images/contact.jpeg">
+				<img class="check" src="assets/img/etc/contact.jpeg">
 			</div>
 		</section>
 	</div>
@@ -948,7 +883,12 @@
 	<div class="end">
 		<p>&copy; 2012 - 2023. Manjul Smith.</p>
 	</div>
-
+	<!-- Import JS: Particles Theme -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<!-- Import JS: Main Script -->
+	<script src="assets/js/landingpage.js"></script>
+	<!-- Import JS: Google Analytics -->
+	<script src="assets/js/google-analytics.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="assets/js/jquery.flipster.min.js"></script>
 

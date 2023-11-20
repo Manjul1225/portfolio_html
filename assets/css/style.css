@@ -7,6 +7,7 @@
 
 body {
   color: #fff;
+
   background: linear-gradient(90deg, rgba(4, 9, 34, 0.993) 0%, rgb(6, 11, 63) 100%);
   /* background: linear-gradient(90deg, rgba(2, 0, 1, 0.993) 0%, rgb(2, 6, 48) 100%); */
 }
@@ -39,12 +40,42 @@ html {
 }
 
 /* home screen */
-#header {
+
+.header {
+  width: 60%;
+}
+
+.header .site-title {
+  font-size: 35px;
+  display: block;
+  line-height: 1;
+  color: #fff;
+
+}
+
+.landing-img {
+  width: 600px;
+  height: 600px;
+  transform: translate(100px, 750px);
+}
+
+canvas {
+  display: inline-block
+}
+
+#particles-js {
+  background: linear-gradient(90deg, rgba(4, 9, 34, 0.993) 0%, rgb(6, 11, 63) 100%);
+  /* vertical-align: bottom; */
+  margin-top: -600px;
   width: 100%;
-  height: 100vh;
-  /* background-image: url(images/Me.png); */
+  min-height: 100vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+
+#particles-js .particles-js-canvas-el {
+  width: 100% !important;
+  height: 100vh !important
 }
 
 @keyframes morph {
@@ -81,18 +112,19 @@ html {
 
 }
 
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
+  transform: translate(750px, 650px);
 }
-
 
 nav ul li {
   display: inline-block;
   list-style: none;
+  margin-left: 50px;
   margin: 20px;
 }
 
@@ -130,8 +162,6 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
-
-
 }
 
 .animate__animated.animate__slideInUp {
@@ -861,22 +891,22 @@ nav .fas {
 /* Project section */
 
 
-/* photographs section */
+/* certificate section */
 #photographs {
-  margin-right: -40px;
+  margin-right: -140px;
 }
 
 .pos_Set {
   margin-top: -110px;
   height: 100vh;
-  margin-right: 60px;
+  margin-right: 80px;
   align-items: center;
   display: flex;
   overflow: hidden;
   justify-content: center;
 }
 
-.sub-project {
+.sub-certificate {
 
   margin-top: 100px;
   font-size: 60px;
@@ -890,29 +920,30 @@ nav .fas {
 
 .slider {
   position: relative;
-  width: 600px;
-  height: 700px;
-  margin-top: -80px;
+  width: 800px;
+  height: 600px;
+  margin-top: -150px;
+  margin-right: 80px;
   transform-style: preserve-3d;
-  animation: rotate 40s linear infinite;
-  -webkit-animation: rotate 40s linear infinite;
+  animation: rotate 30s linear infinite;
+  -webkit-animation: rotate 30s linear infinite;
 }
 
 @keyframes rotate {
   0% {
-    transform: perspective(1200px) rotateY(0deg);
-    -webkit-transform: perspective(1200px) rotateY(0deg);
-    -moz-transform: perspective(1200px) rotateY(0deg);
-    -ms-transform: perspective(1200px) rotateY(0deg);
-    -o-transform: perspective(1200px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    -moz-transform: perspective(800px) rotateY(0deg);
+    -ms-transform: perspective(800px) rotateY(0deg);
+    -o-transform: perspective(800px) rotateY(0deg);
   }
 
   100% {
-    transform: perspective(1200px) rotateY(360deg);
-    -webkit-transform: perspective(1200px) rotateY(360deg);
-    -moz-transform: perspective(1200px) rotateY(360deg);
-    -ms-transform: perspective(1200px) rotateY(360deg);
-    -o-transform: perspective(1200px) rotateY(360deg);
+    transform: perspective(800px) rotateY(360deg);
+    -webkit-transform: perspective(800px) rotateY(360deg);
+    -moz-transform: perspective(800px) rotateY(360deg);
+    -ms-transform: perspective(800px) rotateY(360deg);
+    -o-transform: perspective(800px) rotateY(360deg);
   }
 }
 
@@ -924,11 +955,11 @@ nav .fas {
   left: 0;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i)*30deg)) translateZ(-1200px);
-  -webkit-transform: rotateY(calc(var(--i)*30deg)) translateZ(-1200px);
-  -moz-transform: rotateY(calc(var(--i)*30deg)) translateZ(-1200px);
-  -ms-transform: rotateY(calc(var(--i)*30deg)) translateZ(-1200px);
-  -o-transform: rotateY(calc(var(--i)*30deg)) translateZ(-1200px);
+  transform: rotateY(calc(var(--i)*30deg)) translateZ(-800px);
+  -webkit-transform: rotateY(calc(var(--i)*30deg)) translateZ(-800px);
+  -moz-transform: rotateY(calc(var(--i)*30deg)) translateZ(-800px);
+  -ms-transform: rotateY(calc(var(--i)*30deg)) translateZ(-800px);
+  -o-transform: rotateY(calc(var(--i)*30deg)) translateZ(-800px);
 }
 
 .slider span img {
@@ -965,7 +996,7 @@ nav .fas {
   margin-top: -220px;
 }
 
-/* photographs section */
+/* certificate section */
 
 /* contact me  */
 .contactme {
@@ -1712,28 +1743,24 @@ form textarea {
   }
 
   #photographs {
-
     margin-right: -40px;
   }
 
   .pos_Set {
-    margin-top: -150px;
+    margin-top: -100px;
     margin-right: 20px;
-
   }
 
-  .sub-project {
-
+  .sub-certificate {
     text-align: center;
     margin-right: 40px;
     margin-top: 40px;
     font-size: 35px;
-
   }
 
   .slider {
     position: relative;
-    width: 440px;
+    width: 600px;
     height: 400px;
     margin-top: -80px;
 
@@ -2325,13 +2352,6 @@ form textarea {
 @media (min-width: 601px) and (max-width: 1024px) {
 
 
-  #header {
-
-    background-image: url(images/dp.jpg);
-  }
-
-
-
   .header-text {
     margin-top: 25%;
     text-align: center;
@@ -2528,13 +2548,11 @@ form textarea {
 
   }
 
-  .sub-project {
-
+  .sub-certificate {
     margin-top: 50px;
     font-size: 50px;
     font-weight: 600;
     padding-bottom: 40px;
-
 
   }
 
