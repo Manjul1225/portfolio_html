@@ -172,15 +172,6 @@ nav ul li a:hover::after {
   --animate-duration: 4s;
 }
 
-
-.header-text {
-  position: right;
-  text-align: right;
-  padding-top: 7%;
-  font-size: 23px;
-
-}
-
 .setdiv {
   padding-top: 70px;
 }
@@ -191,8 +182,6 @@ nav ul li a:hover::after {
   overflow: hidden;
   animation: typing 3s, cursor .4s step-end infinite alternate;
   -webkit-animation: typing 3s, cursor .4s step-end infinite alternate;
-
-
 }
 
 @keyframes cursor {
@@ -208,7 +197,14 @@ nav ul li a:hover::after {
 
 }
 
-
+.main-context {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  bottom: 25vh;
+  right: 20vw;
+}
 
 .header-text h1 {
 
@@ -467,7 +463,8 @@ nav .fas {
 .sub-title {
   font-size: 60px;
   font-weight: 600;
-  color: #b4b0b0;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .sub-line {
@@ -851,6 +848,117 @@ nav .fas {
   background-size: cover;
 }
 
+/* phone service screen */
+@media only screen and (max-width: 1024px) {
+
+  nav .fas {
+    display: block;
+    font-size: 22px;
+  }
+
+  nav ul {
+    background: #5a5758;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding-top: 40px;
+    z-index: 2;
+    transition: right 0.5s;
+
+  }
+
+  .logo {
+    width: 200px;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+    text-align: center;
+    color: #000;
+    padding: 17px;
+    background: #060606;
+    box-shadow: 5px 5px 5px rgb(38, 39, 39);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+
+  nav ul .fas {
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    cursor: pointer;
+  }
+
+
+  .follow {
+
+
+    margin-top: -140px;
+    margin-right: 0px;
+  }
+
+  .sub-title {
+    padding-left: 0px;
+  }
+
+  .wrapper h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+  }
+
+  .conten-box {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    background-color: #6d6a6a52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1px 1px;
+    box-shadow: 0 1px 1px rgba(85, 83, 83, 0.2);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  .wrappeer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+  }
+
+  .end {
+    font-size: 12px;
+  }
+}
 
 
 /* ...........Service............ */
@@ -1212,6 +1320,14 @@ form textarea {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
+.wrappeer .skype:hover span,
+.wrappeer .skype:hover .tooltip,
+.wrappeer .skype:hover .tooltip::before {
+
+  background: #0e8ee4;
+  color: #ffffff;
+}
+
 .wrappeer .facebook:hover span,
 .wrappeer .facebook:hover .tooltip,
 .wrappeer .facebook:hover .tooltip::before {
@@ -1482,30 +1598,6 @@ form textarea {
   height: 40px;
   width: 45px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* set screens  */
@@ -2399,14 +2491,12 @@ form textarea {
   nav ul {
     background: #3d3b3c;
     position: fixed;
-    top: 0;
-    right: -200px;
+    top: 30px;
+    right: 420px;
     width: 200px;
-    height: 100vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
-
   }
 
   .logo {
@@ -2457,7 +2547,6 @@ form textarea {
   .sub-title {
     font-size: 40px;
   }
-
 
   .col-1 {
     margin-bottom: 10px;
@@ -2572,22 +2661,15 @@ form textarea {
 
   /*achievement section */
   #Achievements {
-
     padding-left: 160px;
     padding-right: 200px;
-
-
-
   }
 
   .achievement1 {
-
     display: inline-block;
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000000;
     margin-bottom: 50px;
-
   }
 
   .card-image {
@@ -2806,12 +2888,7 @@ form textarea {
 
   }
 
-
-
-
 }
-
-
 
 /*  mini screen */
 
@@ -3003,6 +3080,21 @@ form textarea {
 /*  New Feature Added GG*/
 
 
+.notification1 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: max-content;
+  padding: 20px 15px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(126, 120, 123, 0.514) 0%, rgb(21, 114, 83) 80%);
+  color: #f6f5f9;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.658);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 3s linear forwards;
+}
 
 .notification {
   position: absolute;
@@ -3017,7 +3109,7 @@ form textarea {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
-  animation: fade-in 4s linear forwards;
+  animation: fade-in 5s linear forwards;
 }
 
 .notification__progress {
@@ -3030,8 +3122,8 @@ form textarea {
   transform-origin: left;
   background-image: linear-gradient(to right, #539bdb, #bec5dd);
   border-radius: inherit;
-  animation: load 6s 0.25s linear forwards;
-  -webkit-animation: load 6s 0.25s linear forwards;
+  animation: load 7s 0.25s linear forwards;
+  -webkit-animation: load 7s 0.25s linear forwards;
 }
 
 @keyframes fade-in {
