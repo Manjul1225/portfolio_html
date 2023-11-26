@@ -6,8 +6,10 @@
 }
 
 body {
-  color: #fff;
+  max-width: 100vw;
+  max-height: 100vh;
 
+  color: #fff;
   background: linear-gradient(90deg, rgba(4, 9, 34, 0.993) 0%, rgb(6, 11, 63) 100%);
   /* background: linear-gradient(90deg, rgba(2, 0, 1, 0.993) 0%, rgb(2, 6, 48) 100%); */
 }
@@ -1152,6 +1154,7 @@ section {
 
   font-size: 80px;
   color: #fff;
+  color: rgb(46, 187, 105);
   margin-bottom: 20px;
 }
 
